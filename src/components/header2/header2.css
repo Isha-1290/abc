@@ -1,0 +1,143 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    
+}
+
+.header_container{
+    text-align:left;
+    justify-content: left;
+    padding-top: 20rem;
+    
+}
+
+/* ===== CTA ====== */
+.Any{
+    color:yellow;
+    font-size:1.5rem;
+}
+.cta{
+    margin-top:2.5rem;
+    display:flex;
+    gap:1.2rem;
+    justify-content: left;
+}
+
+/* ===== Header Socials====== */
+
+.header_socials{
+    display:flex;
+    flex-direction: column;
+    align-items:left;
+    gap:1.4rem;
+    position:fixed;
+    left:1rem;
+    bottom:6rem;
+    z-index:2;
+    
+}
+.header_socials a{
+    font-size:30px;
+}
+
+.button {
+    display: inline-flex;
+    justify-items: left;
+    overflow:hidden;
+    height: 40px;
+    width: auto;
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+    max-width: 50px;
+    font-size: 30px;
+  
+}
+.button:hover {
+    background-color:white;
+    color: black;
+    border-radius: 10px;
+    max-width: 300px;
+
+  }
+  
+  
+  .icon {
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    margin-right: 15px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    white-space: nowrap;
+    padding-right: 15px;
+    margin-top: 8px;
+    font-size:12px;
+    color: black;
+    font-weight: 1rem;;
+  }
+.header_socials::after{
+    content:'';
+    width:1px;
+    height:40vh;
+    background:var(--color-primary);
+    margin-left: 1.5rem;
+}
+
+/*================Me==============*/
+/*
+.me{
+  
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 22rem;
+    height:30rem;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    
+    margin-top:4rem;
+    border-radius:12rem 12rem 0 0;
+    overflow:hidden;
+    padding:5rem 1.5rem 1.5rem 1.5rem;   
+}
+*/
+
+
+/* ===============scrollDown==================*/
+
+.scroll_down{
+    position:absolute;
+    right:2.3rem;
+    bottom:2rem;
+    transform:rotate(90deg);
+    font-weight:300;
+    font-size:0.9rem
+}
+
+/* ===============Media Queries (Medium Devices)==================*/
+
+@media screen and (max-width:1024px){
+    .header{
+        height:68vh;
+    }
+    .header_socials{
+        flex-direction: row;
+        position:absolute;
+        transform:translateY(-80vh);
+        margin-left:1rem;
+    }
+    .header_socials::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+    header{
+        height:100vh;
+    }
+    .scroll_down{
+        display:none;
+    }
+}
